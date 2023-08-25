@@ -1,0 +1,45 @@
+.trailer-container {
+    color: #fff;
+    margin: 50px 100px 50px 100px;
+    background-color:  #0f1014;
+    min-height: 500px;
+}
+
+.main-trailer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trailer{
+    max-width: 600px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.video-not-found{
+    width: 400px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.close-trailer-button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-size: 100%;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.close-trailer-button:hover {
+    background-color: rgb(235, 29, 80);
+    color: #fff;
+}
