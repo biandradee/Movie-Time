@@ -24,8 +24,8 @@ function NavBar() {
       <div className='container-options'>
         <span className='container-title'>MovieTime</span>
         <Link
-          to='/'
-          className={`subtitles ${location.pathname === '/' ? 'active-link' : ''}`}
+          to='/movie-time'
+          className={`subtitles ${location.pathname === '/movie-time' ? 'active-link' : ''}`}
         >
           Popular
         </Link>
