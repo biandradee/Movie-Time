@@ -38,3 +38,9 @@ a {
 a:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+    .container-top-rated {
+        margin: 30px 20px;
+    }
+}
