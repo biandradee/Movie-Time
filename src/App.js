@@ -11,10 +11,10 @@ import Upcoming from './pages/upComing';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/movie-time">
       <NavBar />
       <Routes>
-        <Route path="/movie-time" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/topRated" element={<TopRated />} />
         <Route path="/upcoming" element={<Upcoming />} />
         <Route path="/search" element={<Search />} />

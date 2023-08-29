@@ -2,14 +2,11 @@ import React from 'react';
 import './index.css';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-
-function Navigation() {
-  const location = useLocation();
-}
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 function NavBar() {
   const [search, setSearch] = useState("");
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
@@ -23,24 +20,24 @@ function NavBar() {
     <div className='container-nav-bar'>
       <div className='container-options'>
         <span className='container-title'>MovieTime</span>
-        <Link
-          to='/movie-time'
-          className={`subtitles ${location.pathname === '/movie-time' ? 'active-link' : ''}`}
+        <NavLink
+          to='/'
+          className={`subtitles ${location.pathname === '/movie-time' || location.pathname === '/' ? 'active-link' : ''}`}
         >
           Popular
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to='/topRated'
           className={`subtitles ${location.pathname === '/topRated' ? 'active-link' : ''}`}
         >
           Top Rated
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to='/upcoming'
           className={`subtitles ${location.pathname === '/upcoming' ? 'active-link' : ''}`}
         >
           Upcoming
-        </Link>
+        </NavLink>
       </div>
       <form onSubmit={handleSubmit} className='input-area'>
         <input
